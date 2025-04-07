@@ -1,0 +1,120 @@
+:root {
+    --primary: #4CAF50;
+    --secondary: #2E7D32;
+    --light: #f4f4f4;
+    --dark: #333;
+    --white: #fff;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, input, textarea, button {
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  .header {
+    background: var(--primary);
+    color: var(--white);
+    padding: 1rem 0;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .hero {
+    background: linear-gradient(135deg, #66bb6a, #43a047);
+    color: var(--white);
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+  
+  .btn {
+    background: var(--secondary);
+    color: var(--white);
+    padding: 0.7rem 1.4rem;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  .section {
+    padding: 3rem 0;
+  }
+  
+  .light {
+    background: var(--light);
+  }
+  
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .feature-card {
+    background: var(--white);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: 0.3s;
+  }
+  
+  .feature-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .feature-card i {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  .form input, .form textarea {
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .footer {
+    background: var(--dark);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
